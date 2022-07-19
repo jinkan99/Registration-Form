@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 id="heading1">Student Enrollment Form</h1>
+    <form action="" method="" class="user-details">
+      <div class="username">
+        <label>Name</label>
+        <input type="text" placeholder=" Enter your name" id="user-name" />
+      </div>
+      <div class="email">
+        <label>Email</label>
+        <input type="email" placeholder=" eg. xyz@gmail.com" id="user-email" />
+      </div>
+      <div class="website">
+        <label>Website</label>
+        <input type="text" placeholder=" eg. www.abc.com" id="website-link" />
+      </div>
+      <div class="image">
+        <label>Image link</label>
+        <input type="text" placeholder="" id="image-link" accept="image/*" />
+      </div>
+      <div class="gender">
+        <label>Gender</label>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            id="male"
+            class="maleRadio"
+            name="radio-button"
+            value="Male"
+          />
+          <label for="Male">Male</label>
+          <br />
+          <input
+            type="radio"
+            id="female"
+            class="femaleRadio"
+            name="radio-button"
+            value="Female"
+          />
+          <label for="Female">Female</label>
+        </div>
+      </div>
+      <div class="skills-list">
+        <label>Skills</label>
+        <div class="checkboxes">
+          <div id="checkbox1">
+            <input type="checkbox" id="java" value="Java" />
+            <label>Java</label>
+          </div>
+          <div id="checkbox2">
+            <input type="checkbox" value="HTML" />
+            <label>HTML</label>
+          </div>
+          <div id="checkbox3">
+            <input type="checkbox" value="CSS" />
+            <label>CSS</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" id="enroll">Enroll Student</button>
+        <button type="reset" id="reset">Clear</button>
+      </div>
+    </form>
+    <hr id="horizontal-rule" />
+    <h2 id="heading2">Enrolled Students</h2>
+    <table class="tabular-data">
+      <tr id="header">
+        <th>Description</th>
+        <th>Image</th>
+      </tr>
+    </table>
+    <script src="./index.js"></script>
+  </body>
+</html>
